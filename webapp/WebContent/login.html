@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-box {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            width: 320px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .login-box h2 {
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        .input-box {
+            width: 90%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 12px;
+            margin-top: 15px;
+            border: none;
+            border-radius: 10px;
+            background: #2a5298;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #1e3c72;
+        }
+
+        .link {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .link a {
+            color: #2a5298;
+            text-decoration: none;
+        }
+
+        .link a:hover {
+            text-decoration: underline;
+        }
+
+        .divider {
+            margin: 20px 0;
+            font-size: 14px;
+            color: gray;
+        }
+
+        .committee {
+            margin-top: 15px;
+            font-size: 13px;
+        }
+
+        .committee a {
+            color: #1c0503;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .committee a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="login-box">
+
+        <h2>Login</h2>
+
+        <form action="login" method="post">
+
+            <input type="text" name="sic" class="input-box" placeholder="Enter SIC / Student Email" required>
+
+            <input type="password" name="password" class="input-box" placeholder="Enter Password" required>
+
+            <button class="btn" type="submit">Login</button>
+
+        </form>
+
+        <div class="link">
+            Don't have an account? <a href="createacc.html">Create Account</a>
+        </div>
+
+        <div class="divider">OR</div>
+
+        <div class="committee">
+            <a href="memberacc.html">Login as Election Committee Member</a>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
