@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Registration</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-box {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            width: 350px;
+            text-align: center;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 8px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            width: 95%;
+            padding: 12px;
+            background: #2a5298;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .error {
+            color: red;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+<div class="form-box">
+
+<h2>Student Register</h2>
+
+<form>
+
+    <input type="text" name="sic" id="sic" placeholder="Enter SIC (e.g. 12abcd34)">
+
+    <input type="email" name="email" id="email" placeholder="Enter College Email">
+
+    <input type="text" name="year" id="year" placeholder="Enter Year of Joining (e.g. 2025)">
+
+    <input type="text" name="section" id="section" placeholder="Enter Section (A/B/C)">
+
+    <input type="password" name="password" id="password" placeholder="Set Strong Password">
+
+    <input type="password" id="confirm" placeholder="Confirm Password">
+
+    <div class="error" id="msg"></div>
+
+    <button type="submit">Register</button>
+
+</form>
+
+</div>
+</div>
+</body>
+</html>
