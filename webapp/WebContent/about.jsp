@@ -1,16 +1,14 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>About Us</title>
-
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
         }
 
-    
         .hero {
             height: 60vh;
             background: linear-gradient(to right, #1e3c72, #2a5298);
@@ -25,12 +23,10 @@
             font-size: 40px;
         }
 
-    
         .about {
             padding: 50px;
             text-align: center;
         }
-     
 
         .about p {
             max-width: 700px;
@@ -39,7 +35,6 @@
             line-height: 1.6;
         }
 
-        
         .features {
             display: flex;
             justify-content: center;
@@ -60,55 +55,41 @@
             color: #2c3e50;
         }
 
-       
+        .footer {
+            background-color: #174a8b;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 30px 60px;
+            flex-wrap: wrap;
+        }
 
-       
-.footer {
-    background-color: #174a8b;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    padding: 30px 60px;
-    flex-wrap: wrap;
-}
+        .footer-left img {
+            width: 50px;
+            margin-bottom: 10px;
+        }
 
-.footer-left img {
-    width: 50px;
-    margin-bottom: 10px;
-}
+        .footer-center {
+            text-align: center;
+        }
 
-.footer-left p {
-    line-height: 1.6;
-}
-
-
-.footer-center {
-    text-align: center;
-}
-
-
-
-.footer-right {
-    text-align: right;
-}
-
-.footer-right h3 {
-    margin: 5px 0;
-}
+        .footer-right {
+            text-align: right;
+        }
     </style>
 </head>
-
 <body>
-        
+        <!-- HERO SECTION -->
+        <div class="hero">
+        <div class="about-img">
+            <img src="img/s3.jpg" alt="Election Portal">
+        </div>
     
-    <div class="hero">
-         <div class="about-img">
-    <img src="img/s3.jpg" alt="Election Portal Image">
-</div>
-        <h1>About Our Election Portal</h1>
+        <div>
+            <h1>About Our Election Portal</h1>
+        </div>
     </div>
 
-    
     <div class="about">
         <p>
             The College Election Portal is designed to digitize the election process at Silicon University.
@@ -117,54 +98,41 @@
         </p>
     </div>
 
-    
     <div class="features">
-
         <div class="card">
             <h3>Secure Voting</h3>
             <p>Ensures each student votes only once with proper authentication.</p>
         </div>
-
         <div class="card">
             <h3>Real-Time Results</h3>
             <p>Votes are counted instantly and results are displayed live.</p>
         </div>
-
         <div class="card">
             <h3>Easy Access</h3>
             <p>Students can vote from anywhere.</p>
         </div>
-
     </div>
 
-   <div class="footer">
-
-    
-    <div class="footer-left">
-        <img src="img/s3.jpg" >
-        <p>
-            Silicon University,<br>
-            Silicon Hills, Patia,<br>
-            Bhubaneswar - 751024<br>
-            Odisha, India.
-        </p>
+    <div class="footer">
+        <div class="footer-left">
+            
+            <p>
+                Silicon University,<br>
+                Silicon Hills, Patia,<br>
+                Bhubaneswar - 751024<br>
+                Odisha, India.
+            </p>
+        </div>
+        <div class="footer-center">
+            <p>Phone: 9937289499 / 06742725448</p>
+            <p>Email: info@silicon.ac.in</p>
+            <img src="img/s2.png" style="width:100px;height: 100px;" alt="Footer Logo">
+        </div>
+        <div class="footer-right">
+            <p style="font-size: 12px;">Formerly known as</p>
+            <h3>Silicon Institute<br>of Technology</h3>
+            <p>All rights reserved.</p>
+        </div>
     </div>
-
-    
-    <div class="footer-center">
-        <p>Phone: 9937289499 / 06742725448</p>
-        <p>Email: info@silicon.ac.in</p>
-         <img src="img/s2.png" style="width:100px;height: 100px;">
-    </div>
-
-    
-    <div class="footer-right">
-        <p style="font-size: 12px;">Formerly known as</p>
-        <h3>Silicon Institute<br>of Technology</h3>
-        <p>© All rights reserved.</p>
-    </div>
-
-</div>
-
 </body>
 </html>
