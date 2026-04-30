@@ -49,7 +49,7 @@
             padding: 12px;
             margin-top: 12px;
             border: none;
-            border-radius: 10px;
+            border-radius: 11px;
             background: #2a5298;
             color: white;
             font-size: 15px;
