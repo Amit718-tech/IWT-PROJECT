@@ -7,7 +7,7 @@ import java.util.Map;
 public class VoteDAO {
     private static final String DB_URL = "jdbc:postgresql://localhost:5432/election_portal";
     private static final String DB_USER = "postgres";
-    private static final String DB_PASSWORD = "16012006";  // NO PASSWORD
+    private static final String DB_PASSWORD = "16012006";
 
     private Connection getConnection() throws SQLException {
         try { 
@@ -33,7 +33,7 @@ public class VoteDAO {
 
     public boolean castVote(String studentSic, int candidateId, int electionId) {
         if (hasVoted(studentSic, electionId)) return false;
-        String sql = "INSERT INTO votes (student_sic, candidate_id, election_id) VALUES (?,?,?)";
+        String sql = "insert INTO votes (student_sic, candidate_id, election_id) VALUES (?,?,?)";
         try (Connection conn = getConnection(); PreparedStatement ps = conn.prepareStatement(sql)) {
             ps.setString(1, studentSic);
             ps.setInt(2, candidateId);
