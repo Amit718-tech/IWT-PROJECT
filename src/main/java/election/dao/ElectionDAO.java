@@ -8,7 +8,7 @@ import java.util.List;
 public class ElectionDAO {
     private static final String DB_URL = "jdbc:postgresql://localhost:5432/election_portal";
     private static final String DB_USER = "postgres";
-    private static final String DB_PASSWORD = "16012006";  // NO PASSWORD
+    private static final String DB_PASSWORD = "16012006";
 
     private Connection getConnection() throws SQLException {
         try { 
